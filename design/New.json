@@ -1,0 +1,460 @@
+{
+   "_typeName" : "CanvasLayout",
+   "_version" : "VER3",
+   "adjustment" : 0,
+   "box" : {
+      "_typeName" : "RelativeBox",
+      "height" : {
+         "_typeName" : "RelativeValue",
+         "type" : 0,
+         "value" : 0
+      },
+      "offset" : {
+         "_empty" : true
+      },
+      "width" : {
+         "_typeName" : "RelativeValue",
+         "type" : 0,
+         "value" : 0
+      }
+   },
+   "list" : [
+      {
+         "_typeName" : "LinearLayout",
+         "list" : [
+            {
+               "_typeName" : "GameView",
+               "box" : {
+                  "_typeName" : "RelativeBox",
+                  "height" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 2,
+                     "value" : 0.8500000238418579
+                  },
+                  "offset" : {
+                     "_empty" : true
+                  },
+                  "width" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 4,
+                     "value" : 100
+                  }
+               },
+               "gameBoxObj" : {
+                  "_typeName" : "InfiniteGameBox"
+               },
+               "list" : [
+                  {
+                     "_name" : "car",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "Car",
+                           "_typeName" : "ObjectConstruct",
+                           "animations" : [
+                              {
+                                 "_key" : "nup",
+                                 "_value" : {
+                                    "_typeName" : "AngleChange",
+                                    "angle" : 0,
+                                    "changeFunc" : 0,
+                                    "objName" : "",
+                                    "period" : 0,
+                                    "relativeRotation" : false
+                                 }
+                              }
+                           ],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 162,
+                                 "width" : 446
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "car.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "wheel1",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "whe1",
+                           "_typeName" : "ObjectConstruct",
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 80,
+                                 "width" : 80
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "wheel1.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "wheel2",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "whe2",
+                           "_typeName" : "ObjectConstruct",
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 75,
+                                 "width" : 75
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "wheel1.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  }
+               ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  },
+                  "vertAlign" : 0,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  }
+               }
+            },
+            {
+               "_typeName" : "Backgrounded",
+               "background" : {
+                  "_typeName" : "StaticFilledRect",
+                  "box" : {
+                     "_typeName" : "RelativeBox",
+                     "height" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 4,
+                        "value" : 30
+                     },
+                     "offset" : {
+                        "_empty" : true
+                     },
+                     "width" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 4,
+                        "value" : 980
+                     }
+                  },
+                  "color" : [ 0.1450980454683304, 0.4549019634723663, 0, 1 ],
+                  "position" : {
+                     "_typeName" : "AligningOffset",
+                     "horAlign" : 1,
+                     "horOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0
+                     },
+                     "vertAlign" : 1,
+                     "vertOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0
+                     }
+                  }
+               },
+               "obj" : {
+                  "_typeName" : "LinearLayout",
+                  "list" : [
+                     {
+                        "_typeName" : "Button",
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 0,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0
+                           },
+                           "vertAlign" : 1,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "SimpleRectangleButtonSkin",
+                           "borderColor" : [ 0, 0, 0, 1 ],
+                           "borderWidth" : 1,
+                           "box" : {
+                              "_typeName" : "PixelBox",
+                              "height" : 48,
+                              "width" : 300
+                           },
+                           "fillColor" : [ 0.7850000262260437, 0.7843137383460999, 0.7843137383460999, 1 ],
+                           "font" : {
+                              "_typeName" : "FontDesc",
+                              "family" : "Arial",
+                              "size" : 32
+                           },
+                           "text" : "Надпись",
+                           "textColor" : [ 0, 0, 0, 1 ],
+                           "textOutlineColor" : [ 0, 0, 0, 1 ],
+                           "useGradient" : true
+                        }
+                     }
+                  ],
+                  "position" : {
+                     "_typeName" : "AligningOffset",
+                     "horAlign" : 1,
+                     "horOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0
+                     },
+                     "vertAlign" : 1,
+                     "vertOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0
+                     }
+                  },
+                  "skin" : {
+                     "_typeName" : "HorizontalLayoutSkin",
+                     "adjustment" : 1,
+                     "align" : 1,
+                     "box" : {
+                        "_typeName" : "RelativeBox",
+                        "height" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 0,
+                           "value" : 0
+                        },
+                        "offset" : {
+                           "_empty" : true
+                        },
+                        "width" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 0,
+                           "value" : 0
+                        }
+                     },
+                     "padding" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0
+                     }
+                  },
+                  "skipInvisibleElements" : false
+               },
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  },
+                  "vertAlign" : 0,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : -0
+                  }
+               }
+            }
+         ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0
+            },
+            "vertAlign" : 1,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0
+            }
+         },
+         "skin" : {
+            "_typeName" : "VerticalLayoutSkin",
+            "adjustment" : 1,
+            "align" : 1,
+            "box" : {
+               "_typeName" : "RelativeBox",
+               "height" : {
+                  "_typeName" : "RelativeValue",
+                  "type" : 0,
+                  "value" : 0
+               },
+               "offset" : {
+                  "_empty" : true
+               },
+               "width" : {
+                  "_typeName" : "RelativeValue",
+                  "type" : 0,
+                  "value" : 0
+               }
+            },
+            "padding" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : -0
+            }
+         },
+         "skipInvisibleElements" : false
+      }
+   ],
+   "position" : {
+      "_typeName" : "AligningOffset",
+      "horAlign" : 1,
+      "horOffset" : {
+         "_typeName" : "RelativeValue",
+         "type" : 1,
+         "value" : 0
+      },
+      "vertAlign" : 1,
+      "vertOffset" : {
+         "_typeName" : "RelativeValue",
+         "type" : 1,
+         "value" : 0
+      }
+   }
+}
