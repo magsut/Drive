@@ -53,17 +53,47 @@ class MyApp : public App
 		offset.rotate(delta.angle());
 		Car.setAngle(delta.angle());
 		Car.setPos(whe1.pos() + offset);
-		
-		
-
-		
     }
 
 		
+	bool isTouch(Vec2 a,Vec2 b, Vec2 c, float r, Vec2 &g)
+	{
+		auto ab = b - a;
+		auto ac = c - a;
+		auto bc = c - b;
+		auto p = dot(ab,ac) / ab.length();
+		if (p < 0)
+		{
+			if (ac.length() <= r)
+			{
+				g = a;
+				return true;
+			}
+			return false;
+		}
+		if ( p > ab.length())
+		{
+			if (bc.length() <= r)
+			{
+				g = b;
+				return true;
+			}
+			return false;
+		}
+		auto h = ab.normalize() * p;
+		auto hc = c - h;
+		if  (hc.length() <= r)
+		{
+			g = h;
+			return true;
+		}
+		return false;
 
+	}
 		
 
-	
+	Vec2 g;
+
 		float w1;
 		float w2;
 
